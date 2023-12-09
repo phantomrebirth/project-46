@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('/home/phantom/Documents/project-46/fonts/Rubik/static/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rubik';
+    src: url('/home/phantom/Documents/project-46/fonts/Rubik/static/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #f0f2f5; */
+    background: #fff;
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
+}
+p {
+    position: absolute;
+    /* top: -252px;
+    left: -606px; */
+    top: 30px;
+    left: 69px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 49px;
+}
+
+  
+
+.container {
+    position: relative;
+    margin-top: 237px;
+    margin-right: 999px;
+    /* width: 450px; */
+    width: 606px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px 
+        rgba(0, 0, 0, .1), 0 8px 16px 
+        rgba(0, 0, 0, .1); */
+}
+
+.label {
+    padding: 20px 167px;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.loginForm {
+    padding: 56px 36px;
+}
+
+.loginForm .fontEmail {
+    font-size: 18px;
+    color: #130f40;
+    margin: 5px 0;
+}
+
+.loginForm input {
+    height: 40px;
+    width: 350px;
+    padding: 30px 2px;
+    font-size: 18px;
+    outline: none;
+    /* border: 1px solid silver; */
+    border: none !important;
+    /* border-radius: 6px; */
+}
+
+input::after, input:focus{
+    border: none !important;
+}
+
+input::placeholder{
+    color: #131212 !important;
+}
+
+.loginForm .fontPassword {
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+.loginForm .submit {
+    /* 206px */
+    margin: 60px 0 15px 0;
+    height: 49.21px;
+    width: 203.41px;
+    font-size: 20px;
+    color: white;
+    background-color: #7939ff;
+    outline: none;
+    cursor: pointer;
+    border-radius: 23.38px;
+    font-weight: bold;
+    transition: .5s;
+    border: none;
+}
+
+.loginForm button:hover{
+    background: #845ed6;
+}
+
+#sub-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.loginForm #email_error,
+.loginForm #password_error {
+    width: 533px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(199, 0, 0);
+    /* background: rgba(255, 0, 0, 0.1); */
+    /* text-align: center; */
+    margin-top: 10px;
+    /* border-radius: 3px; */
+    /* border: 1px solid #ef9a9a; */
+    display: none;
+}
+
+.loginForm #e-error,
+.loginForm #pass-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
+
+
+.input-normal {
+    border: none !important;
+}
+
+#inputBox1{
+    background: #fff;
+    width: 100%;
+    /* max-width: 420px; */
+    border-radius: 6px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 
+        rgba(0, 0, 0, .1), 0 8px 16px 
+        rgba(0, 0, 0, .2);
+}
+#inputBox1 #email{
+    width: 100%;
+    /* padding: 10px 0; */
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+#inputBox1 #emailIcon{
+    width: 26px;
+    position: relative;
+    right: 8px;
+}
+#inputBox2{
+    background: #fff;
+    width: 100%;
+    /* max-width: 420px; */
+    border-radius: 6px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 
+        rgba(0, 0, 0, .1), 0 8px 16px 
+        rgba(0, 0, 0, .2);
+}
+#inputBox2 #password{
+    width: 100%;
+    /* padding: 10px 0; */
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+#inputBox2 #eye0{
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#inputBox2 #passwordIcon{
+    width: 26px;
+    position: relative;
+    right: 8px;
+}
+#backgroundMark{
+    width: 1062px;
+    height: 1137px;
+    left: 956px;
+    top: -72px;
+    position: absolute;
+    background: #7939FF;
+    border-radius: 305px;
+}
