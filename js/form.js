@@ -11,37 +11,27 @@ function validated(){
     let password_error = document.getElementById('password_error');
     let inputBox1 = document.getElementById("inputBox1");
     let inputBox2 = document.getElementById("inputBox2");
-    
-    // email.style.border = "1px solid #ccc";
-    // email_error.style.display = "none";
-    
-    // password.style.border = "1px solid #ccc";
-    // password_error.style.display = "none";
-    
+
     email.addEventListener("input", email_verify);
     password.addEventListener("input", password_verify);
     
     if (email && email.value.length < 9) {
-        inputBox1.classList.add("input-error");
-        inputBox1.classList.remove("input-normal");
+        inputBox1.style.border = "1px solid #f00";
         email_error.style.display = "block";
         email.focus();
         return false;
-    }else {(email && email.value.length >= 9 )
-        inputBox1.classList.remove("input-error");
-        inputBox1.classList.add("input-normal");
+    } else {
+        inputBox1.style.border = "1px solid silver !important";
         email_error.style.display = "none";
     }
     
     if (password && password.value.length < 8) {
-        inputBox2.classList.add("input-normal");
-        inputBox2.classList.remove("input-error");
+        inputBox2.style.border = "1px solid #f00";
         password_error.style.display = "block";
         password.focus();
         return false;
-    }else{
-        inputBox2.classList.remove("input-error");
-        inputBox2.classList.add("input-normal");
+    } else {
+        inputBox2.style.border = "1px solid silver !important";
         password_error.style.display = "none";
     }
 }
@@ -56,14 +46,14 @@ eyeIcon.onclick = function(){
 }
 function email_verify(){
     if (email && email.value.length >= 9) {
-        email.style.border = "1px solid silver";
+        inputBox1.style.border = "1px solid silver";
         email_error.style.display = "none";
         return true;
     }
 }
 function password_verify(){
     if (password && password.value.length >= 8) {
-        password.style.border = "1px solid silver";
+        inputBox2.style.border = "1px solid silver";
         password_error.style.display = "none";
         return true;
     }
@@ -78,7 +68,7 @@ function submitForm() {
         email: email,
         password: password
     };
-
+    console.log(data)
     fetch("https://oursectionapp-apitest.onrender.com/users/login", {
         method: "POST",
         headers: {
@@ -87,10 +77,16 @@ function submitForm() {
         body: JSON.stringify(data)
     })
     .then(response => response.json())
+        window.location.href = 'home.html';
+        console.log(response)
     .then(data => {
+        window.location.href = 'home.html';
         console.log('Post successful:', data);
     })
     .catch(error => {
+        window.location.href = 'err.html';
         console.error('Error:', error);
     });
+    
 }
+// const response0 = JSON.parse(localStorage.getItem("response"));window.location.href = 'new_page.html';

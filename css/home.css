@@ -10,7 +10,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 body{
     box-sizing: border-box;
 }
@@ -27,4 +26,5 @@ button{
     border-radius: 6px;
     background-color: #7939ff;
     color: white;
+    cursor: pointer;
 }

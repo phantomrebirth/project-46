@@ -17,9 +17,9 @@
     font-style: normal;
   }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     /* background: #f0f2f5; */
     background: #fff;
     font-family: 'Rubik', sans-serif;
@@ -38,13 +38,12 @@ p {
 
   
 
-.container {
-    position: relative;
-    margin-top: 237px;
-    margin-right: 999px;
-    /* width: 450px; */
-    width: 606px;
-    height: auto;
+.contForm {
+    width: 666px;
+    margin: 236px auto auto auto;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     background-color: #fff;
     border-radius: 5px;
     /* box-shadow: 0 2px 4px 
@@ -95,7 +94,6 @@ input::placeholder{
 }
 
 .loginForm .submit {
-    /* 206px */
     margin: 60px 0 15px 0;
     height: 49.21px;
     width: 203.41px;
@@ -142,14 +140,14 @@ input::placeholder{
     align-items: center;
 }
 
-.input-error {
+/* .input-error {
     border: 1px solid red !important;
 }
 
 
 .input-normal {
     border: none !important;
-}
+} */
 
 #inputBox1{
     background: #fff;
@@ -207,11 +205,16 @@ input::placeholder{
     right: 8px;
 }
 #backgroundMark{
-    width: 1062px;
-    height: 1137px;
-    left: 956px;
-    top: -72px;
-    position: absolute;
+    /* width: 960.5px;
+    height: 957.5px; */
+    /* left: 948.5px; */
+    /* top: -237px; */
+    /* position: absolute;
+    border-bottom-left-radius: 305px;
+    border-top-left-radius: 305px; */
+    /* min-width: 100vh; */
+    min-height: 100vh;
     background: #7939FF;
-    border-radius: 305px;
+    border-bottom-left-radius: 196.5px;
+    border-top-left-radius: 196.5px;
 }
